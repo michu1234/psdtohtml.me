@@ -1,0 +1,142 @@
+/* Table of contents */
+/********************/
+
+/*1. Font Faces*/
+
+/*2. Base*/
+
+/*3. Layout*/
+
+/*4. Component*/
+
+/*block*/
+
+/*element*/
+
+/*modifier*/
+
+/*state*/
+
+/*5. Media Queries*/
+
+
+
+
+/*********************************************************************************/
+
+
+
+
+/*FONT FACES*/
+/***********/
+
+@font-face {
+    font-family: Londrina;
+    src: url(../assets/LondrinaSolid-Regular.otf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/BebasNeue.otf);
+}
+
+
+
+/*BASE*/
+/*****/
+html {
+    font-size: 62.5%;
+    --main-blue: #82bcc4;
+}
+
+body {
+    background: #ffffff;
+}
+
+h1 {
+    font-family: Londrina;
+}
+
+
+h2 {
+    font-family: BebasNeue;
+}
+
+h3 {
+
+}
+
+h4 {
+
+    text-shadow: 0 2px 0 rgba(136, 190, 187, 0.75);
+    color: #ffffff;
+    font: 400 4.8rem/1.9rem Londrina, Arial, sans-serif;
+    margin: 0 auto;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+ul {
+    list-style: none;
+}
+
+li::first-letter {
+    text-transform: uppercase;
+}
+
+
+
+
+/*LAYOUT*/
+/*******/
+header {
+    background-color: #82bcc4;
+}
+
+/*COMPONENT*/
+/**********/
+
+
+/*block*/
+/******/
+
+.nav-list {
+    text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25);
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+
+
+/*element*/
+/********/
+
+/*modifier*/
+/*********/
+
+.toUppercase {
+    text-transform: uppercase;
+}
+
+.textCenter {
+    text-align: center;
+}
+/*state*/
+/******/
+
+
+/*MEDIA QUERIES*/
+/**************/
+
+
+
+
