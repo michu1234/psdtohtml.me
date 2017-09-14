@@ -55,6 +55,12 @@ body {
 
 h1 {
     font-family: Londrina;
+    text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25);
+    color: #ffffff;
+    font-family: BebasNeue;
+    font-size: 12.8rem;
+    font-weight: 400;
+    line-height: 10.184rem;
 }
 
 
@@ -71,7 +77,8 @@ h4 {
     text-shadow: 0 2px 0 rgba(136, 190, 187, 0.75);
     color: #ffffff;
     font: 400 4.8rem/1.9rem Londrina, Arial, sans-serif;
-    margin: 0 auto;
+    margin: 24px 0 0 127px;
+    position: absolute;
 }
 
 h5 {
@@ -82,8 +89,20 @@ h6 {
 
 }
 
+nav {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
 ul {
     list-style: none;
+    list-style-position: inside;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
 }
 
 li::first-letter {
@@ -95,7 +114,19 @@ li::first-letter {
 
 /*LAYOUT*/
 /*******/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header {
+    position: relative;
+    background-image: url(../img/sun-rays.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    height: 559px;
     background-color: #82bcc4;
 }
 
@@ -106,19 +137,44 @@ header {
 /*block*/
 /******/
 
-.nav-list {
+.nav__list {
     text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25);
     color: #ffffff;
     font-family: Arial;
     font-size: 16px;
     font-weight: 700;
-    line-height: 19px;
+    line-height: 73px;
+    margin: 0;
 }
 
+.header__content {
+    display: flex;
+}
 
 
 /*element*/
 /********/
+
+.nav__item {
+   margin: 0 19px 0 0;
+    height: 73px;
+}
+
+.header__image {
+    width: auto;
+    margin: 105px 0 0 120px;
+}
+
+.btn {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-family: Londrina;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid #4d453e;
+    background-color: #e74c48;
+    opacity: 0.95;
+}
+
 
 /*modifier*/
 /*********/
@@ -130,8 +186,98 @@ header {
 .textCenter {
     text-align: center;
 }
+
+.header__text--small {
+    text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25);
+    font-size: 72px;
+}
+.header--paragraph {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    color: #224e59;
+    font-family: Arial;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.btn--big {
+    width: 180px;
+    height: 51px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
 /*state*/
 /******/
+
+.is-active {
+    background-image: url(../img/active-indicator.png);
+    background-repeat: no-repeat;
+}
+
+/* Bounce To Bottom */
+.nav__item {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.nav__item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #80e0ed;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.nav__item:hover, .nav__item:focus, .nav__item:active {
+    color: white;
+}
+.nav__item:hover:before, .nav__item:focus:before, .nav__item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*MEDIA QUERIES*/
