@@ -29,7 +29,7 @@
 
         <div class="header__text">
           <h1 class="toUppercase"><span class="header__text--small">we create</span> <br> amazing apps!</h1>
-          <p class="header--paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p class="header__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
           <button class="btn btn--big  toUppercase textCenter">check them out!</button>
         </div>
 
@@ -40,8 +40,8 @@
 
 
     <section class="services">
-    <div class="services__blockCenter">
-          <article>
+      <div class="services__blockCenter">
+        <article>
           <p class="services__titles toUppercase" data-icon="tools">from start to finish</p>
           <p class="services__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
         </article>
@@ -73,7 +73,8 @@
 
 
     <section class="apps">
-     <div class="blockCenter"> <div class="apps__header">
+      <div class="blockCenter">
+        <div class="apps__header">
           <h2 class="toUppercase"><span class="apps__text--small">shall we take a look at</span> <br> <strong>our work?</strong></h2>
           <p class="apps__header-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
         </div>
@@ -117,12 +118,12 @@
 
 
 
-        </div>
+      </div>
 
     </section>
     <section class="team">
-    <div class="blockCenter">
-          <h3 class="toUppercase"><span class="team__title--small">we are a small team</span> <br> with big ideas!</h3>
+      <div class="blockCenter">
+        <h3 class="toUppercase"><span class="team__title--small">we are a small team</span> <br> with big ideas!</h3>
         <div class="team__members">
           <article class="team__member">
             <div class="team__placeholder"></div>
@@ -176,49 +177,61 @@
 
 
     <section class="contact">
-<div class="blockCenter"><h3 class="contact__title toUppercase"><span class="contact__title--small">we would love</span> <br> to hear from you!</h3>
-        <p class="contact__info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-        <form action="post">
-          <input name="name" type="text" placeholder="Your Name" required>
-          <input name="email" type="email" required placeholder="Your E-mail">
-          <textarea name="message" id="message" cols="30" rows="10" required placeholder="Speak Your Mind"></textarea>
-          <input type="number" placeholder="2+2" required>
-          <p class="contact__captcha">While we do <span class="toUppercase">love robots</span> we would still like you to answer this</p>
-          <input class="btn btn--medium textCenter toUppercase" type="submit" value="send">
+      <div class="blockCenter">
+        <div class="contact__description">
+          <h3 class="contact__title toUppercase"><span class="contact__title--small">we would love</span> <br> to hear from you!</h3>
+          <p class="contact__info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 
-
-        </form>
-
-        <section class="news">
-          <article class="news__post">
-            <h6 class="news__post-title toUppercase">we're hiring!</h6>
-            <p class="news__post-date">April 1st 2012</p>
-            <p class="news__post-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          </article>
-          <article class="news__post">
-            <h6 class="news__post-title toUppercase">we're hiring!</h6>
-            <p class="news__post-date">April 1st 2012</p>
-            <p class="news__post-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          </article>
-          <p class="news__pagination">Quicknotes archive:</p>
-        </section>
         </div>
-    </section>
 
+        <div class="contact__news">
+          <form action="post">
+            <input name="name" type="text" placeholder="Your Name" required>
+            <input name="email" type="email" required placeholder="Your E-mail">
+            <textarea name="message" id="message" cols="30" rows="10" required placeholder="Speak Your Mind"></textarea>
+            <div class="form__submit">
+              <input type="number" placeholder="2+2" required>
+              <p class="contact__captcha">While we do <span class="toUppercase">love robots</span> we would still like you to answer this</p>
+              <input class="btn btn--medium textCenter toUppercase" type="submit" value="send">
+            </div>
+
+
+          </form>
+
+          <section class="news">
+            <article class="news__post">
+              <h6 class="news__post-title toUppercase">we're hiring!</h6>
+              <p class="news__post-date">April 1st 2012</p>
+              <p class="news__post-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </article>
+            <article class="news__post">
+              <h6 class="news__post-title toUppercase">we're hiring!</h6>
+              <p class="news__post-date">April 1st 2012</p>
+              <p class="news__post-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            </article>
+            <p class="news__pagination">Quicknotes archive:</p>
+          </section>
+        </div>
+      </div>
+    </section>
 
 
 
   <footer>
 
-<div class="blockCenter"><p class="footer__copyright">Copyright Mobile Ninjas 2012</p>
+    <div class="blockCenter">
+      <p class="footer__copyright">Copyright Mobile Ninjas 2012</p>
       <ul class="footer__nav">
         <li class="footer__nav-item">home</li>
         <li class="footer__nav-item">apps</li>
         <li class="footer__nav-item">team</li>
         <li class="footer__nav-item">contact</li>
       </ul>
-      </div>
+    </div>
   </footer>
+
+
+
   </div>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
