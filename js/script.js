@@ -47,10 +47,3 @@ $(".btn--arrow").click(function() {
 
 
 
-
-$('.left').click(function(){
-  var firstThing = $('.apps__item:first-child').clone();
-
-  $(firstThing).before($('apps__item:last-child'));
-  $('.apps__examples').animate({'marginLeft': "-=650px"});
-})
