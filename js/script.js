@@ -75,9 +75,10 @@ $(document).scroll(function() {
 
 
 $('.icon-menu').on('click', function(){
+
+  $('.nav__list').slideToggle('fast');
   $('.nav__list > li').addClass('is-mobile');
-  $('.nav__list').show();
-  $('.nav__list').css('marginTop', '5px');
+//  $('.nav__list').toggleClass('is-mobile2');
 })
 
 
