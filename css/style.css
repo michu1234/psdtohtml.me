@@ -998,16 +998,20 @@ input[type="submit"]{
 }
 
 .is-mobile {
-  background-color: #82bcc4;
-  color: #ffffff;
-  padding: 0 10px;
+  display: block;
+  top: 11px;
+  right: -2px;
+  background-color: #83bdbf;
+
 }
 
-.is-mobile2 {
-top: 70px;
-right: 0;
-display: block;
-}
+
+
+
+
+
+
+
 
 /* nav animation */
 
@@ -1125,10 +1129,7 @@ display: block;
 }
 
 @media screen and (max-width: 1050px) {
-  .nav__list li {
-    display: block;
-  }
-  .nav__list {
+  header li {
     display: none;
   }
   .icon-menu {
@@ -1139,6 +1140,7 @@ display: block;
     min-width: 100%;
   }
 }
+
 
 @media screen and (min-width: 952px) and (max-width: 1137px) {
   .services__description {
