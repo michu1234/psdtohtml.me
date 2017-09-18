@@ -270,6 +270,11 @@ footer {
   margin-bottom: 40px;
 }
 
+.apps__blockCenter {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
 .apps__examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1157,6 +1162,9 @@ input[type="submit"]{
 @media screen and (max-width: 1178px){
   .contact__info {
     width: 517px;
+  }
+  .apps__blockCenter {
+    max-width: 85%;
   }
 }
 
