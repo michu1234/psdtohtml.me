@@ -321,7 +321,6 @@ footer
 .apps__examples
 {
   display: none;
-  /*    overflow: hidden;*/
 }
 
 .apps__item
@@ -329,6 +328,7 @@ footer
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 
   width: 289px;
   height: 265px;
@@ -336,6 +336,26 @@ footer
   background-color: #f5f1e6;
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
   box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+}
+
+.appstore
+{
+  position: absolute;
+
+  text-align: center;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  border-top: 1px solid #e2e2e2;
+}
+
+.appstore img
+{
+  padding-top: 8px;
+  padding-right: 2%;
 }
 
 .team__members
