@@ -67,9 +67,6 @@ $(document).scroll(function() {
 });
 
 
-
-
-
 // STICKY BAR //
 
 $(document).scroll(function() {
@@ -95,15 +92,11 @@ $('.nav__list').on('click', function(event){
 })
 
 
-
 // MOBILE MENU //
 
 $('.icon-menu').on('click', function(){
 $('.nav__list li').toggleClass('is-mobile');
 })
-
-
-
 
 
 // CAROUSEL //
@@ -115,22 +108,23 @@ $('.apps__control').on('click', 'div', function(event){
 $('.apps__control div').eq(1).click(function(){
   console.log('srodek');
   $('.apps__carousel .apps__examples').eq(1).addClass('is-active-apps').css('opacity', 0).siblings().removeClass('is-active-apps');
-  $('.apps__carousel .apps__examples').eq(1).fadeTo('fast',1);
+  $('.apps__carousel .apps__examples').eq(1).fadeTo(100,1);
 })
 
 $('.apps__control div').eq(0).click(function(){
   console.log('srodek');
   $('.apps__carousel .apps__examples').eq(0).addClass('is-active-apps').css('opacity', 0).siblings().removeClass('is-active-apps');
-  $('.apps__carousel .apps__examples').eq(0).fadeTo('fast',1);
+  $('.apps__carousel .apps__examples').eq(0).fadeTo(100,1);
 })
 
 
 $('.apps__control div').eq(2).click(function(){
   console.log('srodek');
   $('.apps__carousel .apps__examples').eq(2).addClass('is-active-apps').css('opacity', 0).siblings().removeClass('is-active-apps');
-  $('.apps__carousel .apps__examples').eq(2).fadeTo('fast',1);
+  $('.apps__carousel .apps__examples').eq(2).fadeTo(100,1);
 })
 
+// CAROUSEL ON SWIPE
 
 
-
+// NEWS API
