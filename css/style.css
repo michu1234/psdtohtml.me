@@ -276,12 +276,7 @@ footer {
 }
 
 .apps__examples {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: none;
   /*    overflow: hidden;*/
 }
 
@@ -585,6 +580,22 @@ form {
   margin: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.apps__control {
+  text-align: center;
+  padding-top: 27px
+}
+
+.apps__dot{
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(255, 255, 255, 0.2);
+  background-color: #f5f1e6;
+  opacity: 0.95;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 14px;
 }
 
 .team__placeholder {
@@ -1000,6 +1011,22 @@ input[type="submit"]{
 .is-active {
   background-image: url(../img/active-indicator.png);
   background-repeat: repeat-x;
+}
+
+.is-active-dot {
+  background-color: #e74c48;
+  transition: .3s;
+}
+
+.is-active-apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 1;
+  transition: all .6s;
 }
 
 .is-mobile {

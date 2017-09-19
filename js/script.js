@@ -1,3 +1,6 @@
+// TOP MENU //
+
+
 $(".nav__list li:first-child").click(function() {
   $('html, body').animate({
     scrollTop: $("header").offset().top
@@ -38,9 +41,21 @@ $(".nav__list li:nth-child(5)").click(function() {
 
 
 
+// UP BUTTON //
+
+$(".btn--arrow").click(function() {
+  $('html, body').animate({
+    scrollTop: $(".apps").offset().top
+  }, 1500);
+})
+
+$(".button-up").click(function() {
+  $('html, body').animate({
+    scrollTop: $("header").offset().top
+  }, 2000);
+});
+
 $('.button-up').hide();
-
-
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
@@ -53,22 +68,9 @@ $(document).scroll(function() {
 
 
 
-$(".button-up").click(function() {
-  $('html, body').animate({
-    scrollTop: $("header").offset().top
-  }, 2000);
-});
 
 
-
-$(".btn--arrow").click(function() {
-  $('html, body').animate({
-    scrollTop: $(".apps").offset().top
-  }, 1500);
-})
-
-
-
+// STICKY BAR //
 
 $(document).scroll(function() {
 
@@ -87,8 +89,14 @@ $(document).scroll(function() {
   }
 )
 
+$('.nav__list').on('click', function(event){
+  $('.nav__list li').removeClass('is-active');
+  $(event.target).addClass('is-active');
+})
 
 
+
+// MOBILE MENU //
 
 $('.icon-menu').on('click', function(){
 $('.nav__list li').toggleClass('is-mobile');
@@ -97,9 +105,30 @@ $('.nav__list li').toggleClass('is-mobile');
 
 
 
-$('.nav__list').on('click', function(event){
-  $('.nav__list li').removeClass('is-active');
-  $(event.target).addClass('is-active');
+
+// CAROUSEL //
+
+$('.apps__control').on('click', 'div', function(event){
+  $(event.target).addClass('is-active-dot').siblings().removeClass('is-active-dot');
+})
+
+$('.apps__control div').eq(1).click(function(){
+  console.log('srodek');
+  $('.apps__carousel .apps__examples').eq(1).addClass('is-active-apps').css('opacity', 0).siblings().removeClass('is-active-apps');
+  $('.apps__carousel .apps__examples').eq(1).fadeTo('fast',1);
+})
+
+$('.apps__control div').eq(0).click(function(){
+  console.log('srodek');
+  $('.apps__carousel .apps__examples').eq(0).addClass('is-active-apps').css('opacity', 0).siblings().removeClass('is-active-apps');
+  $('.apps__carousel .apps__examples').eq(0).fadeTo('fast',1);
+})
+
+
+$('.apps__control div').eq(2).click(function(){
+  console.log('srodek');
+  $('.apps__carousel .apps__examples').eq(2).addClass('is-active-apps').css('opacity', 0).siblings().removeClass('is-active-apps');
+  $('.apps__carousel .apps__examples').eq(2).fadeTo('fast',1);
 })
 
 
