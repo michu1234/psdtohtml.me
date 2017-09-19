@@ -791,9 +791,18 @@ form
   line-height: 1.6rem;
 
   max-width: 248px;
-  height: 91px;
+  max-height: 91px;
 
   color: #7e7e7e;
+}
+
+.team__icons {
+  width: 100px;
+}
+
+.team__icons img
+{
+  padding-right: 4px;
 }
 
 .contact__title
@@ -1398,6 +1407,10 @@ input[type='submit']
   {
     margin-top: 10px;
   }
+  .team__icons img
+  {
+    margin-top: -12px;
+  }
 }
 
 @media screen and (max-width: 620px)
@@ -1420,6 +1433,10 @@ input[type='submit']
   h4
   {
     left: -10px;
+  }
+  .team__icons
+  {
+    padding-top: 10px;
   }
 }
 
